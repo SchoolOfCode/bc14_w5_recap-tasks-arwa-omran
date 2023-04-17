@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function CommentForm({ onSubmit }) {
-  const [author, setAuthor] = useState("Anon Author");
+  const [author, setAuthor] = useState("");
   const [comment, setComment] = useState("");
 
   function handleAuthorChange(event) {

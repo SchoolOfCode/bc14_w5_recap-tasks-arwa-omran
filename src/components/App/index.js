@@ -7,6 +7,7 @@ import { blog } from "../../data/blogs";
 function App() {
   const [comments, setComments] = useState([]);
 
+
   function addComment(author, content) {
     const newComment = {
       id: Date.now().toString(),
