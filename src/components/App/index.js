@@ -3,6 +3,7 @@ import BlogPost from "../BlogPost";
 import CommentList from "../CommentList";
 import CommentForm from "../CommentForm";
 import { blog } from "../../data/blogs";
+import "./style.css";
 
 function App() {
   const [comments, setComments] = useState([]);

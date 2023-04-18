@@ -4,12 +4,14 @@ const BlogPost = ({ blog }) => {
 
   return (
     <div className="blog-post">
-      <img src={blog.imageSrc} alt={blog.imageAlt} />
-      <p className="caption">{blog.imageAlt}</p>
-      <h2>{blog.title}</h2>
-      <h3 className="author">{`By ${blog.author}`}</h3>
+      <h1 className = "blog-title">{blog.title}</h1>
+      <h2 className="author">{`By ${blog.author}`}</h2>
       <p className="date">{blog.datePosted}</p>
-      <p className="content">{blog.content}</p>
+      <div className="blog-post-content">
+        <img src={blog.imageSrc} alt={blog.imageAlt} />
+        <p className="caption">{blog.imageAlt}</p>
+        <p className="content">{blog.content}</p>
+      </div>
     </div>
   );
 };

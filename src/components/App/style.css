@@ -1,0 +1,146 @@
+html {
+    background-color: burlywood;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-title {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.author {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.date {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.content {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #000000;
+}
+
+
+button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 2rem;
+    margin-top: 0%;
+    background-color: #fbe0b2;
+}
+
+button:hover {
+    background-color: #ffe8c2;
+    color: black;
+    cursor: pointer;
+}
+
+/* putting initials variable from Comment.js in a circle */
+.initials-circle {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #fc0000;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0.5rem;
+}
+
+.author-comment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+
+.author-comment-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000;
+    margin: 0 0.5rem;
+}
+
+.comment-text {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #000000;
+    margin: 0 3.5rem;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    background-color: #fbe0b2;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.blog-post-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fbe0b2;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .comment-form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .comment-form label {
+    margin-bottom: 5px;
+  }
+  
+  .comment-form input,
+  .comment-form textarea {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #fbe0b2;
+  }
+  
+  #author {
+    width: 25%;
+  }

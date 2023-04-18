@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function CommentForm({ onSubmit }) {
-  const [author, setAuthor] = useState("Anon");
+  const [author, setAuthor] = useState("");
   const [content, setContent] = useState("");
 
   const handleSubmit = (event) => {
@@ -15,6 +15,8 @@ function CommentForm({ onSubmit }) {
 
   return (
     <form onSubmit={handleSubmit}>
+    <div className = "comment-form">
+      <h2>Leave a comment</h2>
       <div>
         <label htmlFor="author">Author</label>
         <input type="text" id="author" value={author} onChange={(event) => setAuthor(event.target.value)} />
@@ -22,6 +24,7 @@ function CommentForm({ onSubmit }) {
       <div>
         <label htmlFor="content">Comment</label>
         <textarea id="content" value={content} onChange={(event) => setContent(event.target.value)} />
+      </div>
       </div>
       <button type="submit">Submit</button>
     </form>

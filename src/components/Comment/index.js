@@ -10,11 +10,11 @@ function Comment({ author, content }) {
 
   return (
     <div className="comment">
+    <div className = "author-comment">
       <div className="initials-circle">{initials}</div>
-      <div className="comment-text">
-        <h3 className="author">{author}</h3>
-        <p className="content">{content}</p>
-      </div>
+        <h3 className="author-comment-name">{author}</h3>
+    </div>
+      <p className="comment-text">{content}</p>
     </div>
   );
 };
