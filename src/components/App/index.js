@@ -18,7 +18,7 @@ function App() {
       setComments([...comments, newComment]);
       newCommentId();
   }
-  
+
   function newCommentId() {
     setCommentId(commentId + 1);
   }
