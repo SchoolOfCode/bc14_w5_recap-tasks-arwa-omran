@@ -1,10 +1,10 @@
 import React from "react";
 
 function Comment({ author, content }) {
-  // Get the initials of the author
+  // Get the initials of the author (up to 3)
   const initials = author
     .split(" ")
-    .map((name) => name.charAt(0))
+    .map((name, index) => index < 3 ? name.charAt(0) : "")
     .join("")
     .toUpperCase();
 
