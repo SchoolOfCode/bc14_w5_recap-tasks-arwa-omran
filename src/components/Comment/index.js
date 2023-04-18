@@ -1,6 +1,6 @@
 import React from "react";
 
-const Comment = ({ author, content }) => {
+function Comment({ author, content }) {
   // Get the initials of the author
   const initials = author
     .split(" ")
@@ -10,9 +10,9 @@ const Comment = ({ author, content }) => {
 
   return (
     <div className="comment">
-      <div className="avatar">{initials}</div>
+      <div className="initials-circle">{initials}</div>
       <div className="comment-text">
-        <p className="author">{author}</p>
+        <h3 className="author">{author}</h3>
         <p className="content">{content}</p>
       </div>
     </div>
